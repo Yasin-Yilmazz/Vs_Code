@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #seker {
+            border: 3px solid blue;
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(92, 91, 91);">
+    <h3>Welcome to Lesson2</h3>
+
+    <form action="result.html" method="get">
+
+        <div>
+            <label for="name">isim:</label>
+            <input id="name" placeholder="lütfen adınızı giriniz..." type="text"> <br>
+
+            <label for="lastname">soyisim</label>
+            <input type="text" id="lastname" name="soyisim" placeholder="lütfen soyadınızı giriniz..." >
+            <br>
+            <!-- required ekleyerek zorunlu hale getirebilirz herhangi birisni -->
+
+            <!-- name i kullanmazsak backend kısmında ismi tutmuyor silip denenebilir -->
+        </div>
+
+        <div>
+            <label for="">Parola</label>
+            <input type="password" name="Parola" id="" placeholder="şifrenizi giriniz...">
+        </div>
+
+        <div>
+            <label for="">Cinsiyet</label>
+            <br>
+            <label for="gender">Erkek</label>
+            <input type="radio" name="cinsiyet" id="gender" value="Erkek">
+            <label for="gender2">Kadın</label>
+            <input type="radio" name="cinsiyet" id="gender2" value="Kadın" checked>
+
+        </div>
+
+
+        <div>
+            <p>Favori hayvan dostlarınızı seçiniz:</p>
+
+            <input type="checkbox" name="animal_1" id="panda" value="Panda">
+            <label for="panda">Panda</label>
+            <input type="checkbox" name="animal_2" id="balık" value="Balık">
+            <label for="balık">Balık</label>
+            <input type="checkbox" name="animal_3" id="kedi" value="Kedi">
+            <label for="kedi">Kedi</label>
+            <input type="checkbox" name="animal_4" id="dana" value="Dana">
+            <label for="dana">Dana</label>
+
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="yas" id="age" step="5" placeholder="yaşınızı giriniz">
+        </div>
+
+        <div>
+            <label for="search">Search</label>
+            <input type="search" name="arandı" id="search" placeholder="arama..">
+
+
+        </div>
+
+        <div>
+            <label for="color">Seçin:</label>
+            <input type="color" name="seçilen renk" id="color">
+        </div>
+
+        <div>
+            <label for="file">Dosya Seç</label>
+            <input type="file" name="seçilen dosya" id="file">
+        </div>
+
+        <div>
+            <label for="date">Tarih</label>
+            <input type="date" name="tarih" id="date">
+        </div>
+
+        <div>
+            <label for="mail">Email Girin</label>
+            <input type="email" name="" id="mail" placeholder="email adresinizi giriniz..">
+        </div>
+
+        <div>
+            <label for="no">Telefon numarası:</label>
+            <input type="tel" name="Tel.no" id="no" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                placeholder="XXX-XXX-XX-XX">
+        </div>
+        <hr style="margin-top: 20px;">
+
+        <div>
+            <label for="seker">Hangi tatlıyı seversiniz:</label> <br>
+            <select style="margin-top: 10px;" name="" id="seker" size="5" multiple>
+                <option value="sütlac">Sütlaç</option>
+                <option value="keskül">Keşkül</option>
+                <option value="süpangle">Süpangle</option>
+                <option value="magnolia">Magnolia</option>
+                <option value="güllac">Güllac</option>
+            </select>
+
+        </div>
+        <hr>
+
+        <!-- burada <optgroup> kullanarak gruplama yapabiliyoruz içine label yazarak -->
+
+        <div>
+            <label for="seker">Hangi tatlıyı seversiniz:</label>
+            <select name="tatlılar" id="seker2">
+                <optgroup label="Sütlü tatlılar">
+
+                    <option value="süpangle">Süpangle</option>
+                    <option value="magnolia">Magnolia</option>
+                    <option value="güllac">Güllac</option>
+                </optgroup>
+
+                <optgroup label="Şerbetli tatlılar">
+                    <option value="sütlac">Sütlaç</option>
+                    <option value="keskül">Keşkül</option>
+                </optgroup>
+            </select>
+        </div>
+
+
+        <div>
+            <label for="yorum">Yorum</label>
+            <textarea name="" id="yorum" style="resize: none; width: 75%;" placeholder="Lütfen yorum yazınız..."></textarea>
+
+
+        </div>
+        <div>
+            <label for="inpu-browser">Browser</label>
+            <input type="text" name="kullanılan browser" id="inpu-browser" list="browser">
+            <datalist id="browser">
+                <option value="Chrome"></option>
+                <option value="Firefox"></option>
+                <option value="Edge"></option>
+                <option value="Safari"></option>
+                <option value="Opera"></option>
+                <option value="Brave"></option>
+            </datalist>
+
+
+        </div>
+
+        <div>
+
+            <fieldset style="width: 50%;">
+                <legend>Kişisel Bilgiler</legend>
+                <br>
+                <label for="fname">Ad:</label>
+                <br>
+                <input type="text" name="girilen_ad" id="fname" placeholder="adınızı...">
+                <br>
+                <label for="lname">Soyad:</label>
+                <br>
+                <input type="text" name="girilen_soyad" id="lname" placeholder="soyadınızı...">
+            </fieldset>
+
+        </div>
+
+        <br><br><br><br><br>
+        <input type="submit" id="" value="Send">
+        <input type="reset" value="reset" min="2021-01-01">
+
+
+
+    </form>
+
+
+
+
+</body>
+
+</html>

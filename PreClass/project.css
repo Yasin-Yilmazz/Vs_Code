@@ -1,0 +1,97 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.container{
+    /* border: 2px solid red; */
+    background-color: rgb(87, 85, 85);
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+    
+}
+
+.title{
+    font-family: 'Lobster', cursive;
+    
+    
+}
+
+
+#title{
+    text-align: center;
+    font-size: 90px;
+}
+
+
+#image{
+    width: 350px;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+}
+
+#img-div{
+    /* border: 2px solid red; */
+}
+
+#life{
+    text-align: center;
+
+}
+
+#info{
+    font-size: 25px;
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+}
+
+
+.heading{
+
+}
+
+
+#marvel{
+    color: red;
+    font-family: 'Lobster', cursive;
+    font-size: 36px;
+    margin-left: 10%;
+}
+span{
+    color: red;
+}
+
+ul{
+    width: 80%;
+    margin: auto;
+    
+}
+
+li{
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+#footer{
+    width: 80%;
+    margin: auto;
+    font-size: 1.2rem;
+    line-height: 3rem;
+}
+
+#link{
+    text-decoration: none;
+    color: white;
+    border: 1px solid darkorange;
+    padding: 10px;
+    background-color: black;
+    border-radius: 15px;
+}
+
+#link:hover{
+    background-color: gray;
+    color: black;
+}

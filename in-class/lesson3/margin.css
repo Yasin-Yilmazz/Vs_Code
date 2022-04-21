@@ -1,0 +1,25 @@
+.demo {
+    background-color: aqua;
+    width: 80%;
+    margin: 50px 50px;
+
+}
+
+.one {
+    background-color: blue;
+    height: 50px;
+
+}
+
+.two {
+    background-color: red;
+    /* height: 50px; */
+    /* width: 50px; */
+    margin: 100px;
+    /* margin: 20%; */
+    /* margin: inherit; */
+}
+
+.three {
+    background-color: green;
+}
