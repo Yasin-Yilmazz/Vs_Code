@@ -26,8 +26,7 @@
 
         #how-it-works {
             background-color: #fc997c;
-            /* margin: 20px;
-    margin-left: 0; */
+            /* margin: 20px;margin-left: 0; */
             padding: 10px;
 
         }
@@ -39,12 +38,12 @@
 
         .main-header {
             background-color: #fc997c;
-
+            padding: 8px 16px;
         }
 
         .main-nav {
             display: inline-block;
-            width: calc(100% - 80px);
+            width: calc(100% - 99px);
             /*Bu şekilde yaparak soldaki elemanı sağdan çıkardık ve otomatik hesaplattık*/
             text-align: right;
         }
@@ -53,18 +52,34 @@
             margin: 0;
             padding: 0;
             list-style: none;
-        }
-        
-        header ul li {
-            display: inline-block;
+            
         }
 
+        .main-nav__items a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        header ul li {
+            display: inline-block;
+            margin: 0 10px;
+            
+        }
+
+        .main-header__logo {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 21px;
+
+        }
     </style>
 </head>
 
 <body>
     <header class="main-header">
-        <a href="#">MovieApp</a>
+        <a href="#" class="main-header__logo">MovieApp</a>
         <nav class="main-nav">
             <ul class="main-nav__items">
                 <li>
