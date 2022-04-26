@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-sizing</title>
+    <style>
+
+        #content-box {
+            background-color: darkorange;
+            border: 5px solid red;
+            height: 50px;
+            padding: 20px;
+            /* box-sizing: content-box; */
+
+
+        }
+
+        span {
+            background-color: red;
+            padding: 10px 50px;
+            /* margin: 50px 0; */
+
+        }
+
+        h1 {
+
+        }
+
+        img {
+            
+        }
+
+        h2 {
+            margin-top: -100px;
+            color: #fff;
+            margin-bottom: 100px;
+        }
+
+        #border-box {
+            background-color: crimson;
+            border: 5px solid blue;
+            height: 50px;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 60px;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <h1>CONTENT BOX</h1>
+    <img src="https://picsum.photos/id/1003/600/400" alt="">
+    
+    <p id="content-box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem non quidem molestias ea totam debitis neque doloribus a aut. Ab beatae autem vitae distinctio! Consequatur itaque doloremque quasi aperiam illum!</p>
+    <span>Lorem, ipsum dolor.</span>
+
+    <h1>BORDER BOX</h1>
+    <img src="https://picsum.photos/id/327/600/400" alt="">
+
+
+    <h2>resmin üstünde</h2>
+
+    <p id="border-box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae reiciendis adipisci corporis eaque sed eveniet fuga, culpa doloribus, eligendi dicta quae, hic sint non. Cumque error animi eaque impedit aliquid!</p>
+
+</body>
+</html>
