@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #showcase {
+            background-color: #2e4c6d;
+            /* margin-top: 20px;
+            margin-left: 50px;
+             margin-right: 0px; */
+            height: 500px;
+            width: 100%;
+            /*yan yana koyarsak alta geçmesin diye %100 yapıyoruz */
+            padding: 10px;
+            /* border: 5px solid red; */
+            background: url('photo-1553095066-5014bc7b7f2d.avif');
+            background-position: center;
+        }
+
+        h1 {
+            color: #fff;
+            border: 2px solid #fff;
+            display: inline;
+            border-radius: 10px;
+            background-color: black;
+
+        }
+
+        h1:hover {
+            background-color: #fc997c;
+        }
+
+        #how-it-works {
+
+            /* margin: 20px;
+    margin-left: 0; */
+            padding: 10px;
+
+        }
+
+        body {
+            margin: 0;
+
+        }
+
+        .main-header {
+            background-color: #fc997c;
+            padding: 8px 16px;
+
+        }
+
+        .main-nav {
+            display: inline-block;
+            width: calc(100% - 10px);
+            /*Bu şekilde yaparak soldaki elemanı sağdan çıkardık ve otomatik hesaplattık*/
+            text-align: right;
+
+        }
+
+        #movieapp {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 21px;
+        }
+
+        .main-nav a {
+            text-decoration: none;
+            color: #fff;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        .main-nav a:hover {
+            color: blue;
+        }
+
+        .main-nav a:active {
+            color: yellow;
+        }
+
+        .main-nav__item::before {
+            content: '\2022';
+            color: #fff;
+        }
+
+        #how-it-works {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .parts {
+            padding: 10px;
+            display: inline-block;
+            width: 30%;
+            height: 30%;
+
+        }
+
+        h3 {
+            display: inline-block;
+            padding: 30px;
+            font-size: 24px;
+        }
+
+        .col {
+            display: inline-block;
+            width: calc(50% - 2px);
+            height: 350px;
+            background-color: brown;
+            vertical-align: middle;
+        }
+
+        .left {
+            background-image: url("https://picsum.photos/id/220/600/400");
+            background-position: center;
+            background-size: cover; /*resmi doldurur*/
+        }
+
+        #features {
+            margin-top: 50px;
+            padding: 1px;
+        }
+
+        .right {
+            background: #5050505e;
+            padding: 15px;
+            vertical-align: top;
+        }
+
+        .right h3 {
+            font-size: 30px;
+        }
+
+        #features a {
+            padding: 10px 25px;
+            color: #fff;
+            background-color: #fc997c;
+            text-decoration: none;
+            font-size: 16px;
+            text-align: center;
+            border: 1px solid #fc997c;
+            border-radius: 10px;
+            display: inline-block;
+            
+        }
+
+        #features a:hover {
+            background-color: #fff;
+            color: #fc997c;
+            border: 1px solid #fc997c;
+            
+        }
+
+        #features p {
+            margin: 20px 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="main-header">
+        <a id="movieapp" href="#">MovieApp</a>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item"><a href="#">Home</a></li>
+                <li class="main-nav__item"><a href="#">Movies</a></li>
+                <li class="main-nav__item"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="showcase">
+            <h1>Welcome to MovieApp</h1>
+        </section>
+        <section id="how-it-works">
+            <h2>How it works ?</h2>
+            <p>We will show you step by step how to start watching your favorite movies & tv shows starting now !</p>
+            <div >
+                <div class="parts">
+                    <i class="fa-duotone fa-alicorn"></i>
+                    <h3>Register</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing ept. Quam officia, architecto perspiciatis
+                        vitae assumenda non.</p>
+                </div>
+                <div class="parts">
+                    <i class="fa-thin fa-aperture"></i>
+                    <h3>Choose a Plan</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing ept. Eveniet apquam soluta consequuntur
+                        ducimus sed sunt.</p>
+                </div>
+                <div class="parts">
+                    <h3>Enjoy Movify</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing ept. Esse placeat quaerat possimus voluptas
+                        perspiciatis. Cdivpa.</p>
+                </div>
+                </ul>
+        </section>
+
+        <section id="features">
+            <div class="row">
+
+                <div class="col left">
+
+                </div>
+
+                <div class="col right">
+                    <h3>Watch all Movies & Tv Shows once they get released!</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, quae totam. Consequuntur omnis totam debitis atque deleniti consectetur magni iure numquam nobis, blanditiis asperiores, distinctio culpa repellat facere, libero excepturi!</p>
+                    <a href="#">View Features</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+<br><br><br><br><br><br><br><br><br><br>
+    
+
+</body>
+
+</html>
