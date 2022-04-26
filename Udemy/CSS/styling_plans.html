@@ -10,6 +10,7 @@
     <style>
         * {
             margin: 0;
+            padding: 0;
             box-sizing: border-box;
         }
 
@@ -194,8 +195,22 @@
 
         }
 
-        .plan h2 {
-            padding-bottom: 20px;
+        .plan__badge {
+            background: #fff;
+            color: #fc997c;
+            padding: 5px;
+            border-radius: 5px;
+            text-align: center;
+            
+        }
+
+        .recommended_plan {
+            color: #fff;
+            background-color: #396eb0!important;
+        }
+
+        .recommended_plan h2 {
+            padding: 10px 0px;
         }
 
         .plan ul {
@@ -217,6 +232,11 @@
         .inner_plan {
             background-color: #edf5f7;
             padding: 25px 10px;
+            border-radius: 5px;
+        }
+
+        .plan__features li {
+            margin: 6px 0px;
         }
         
         .row {
@@ -295,7 +315,7 @@
                         <div class="inner_plan">
                             <h2>Free</h2>
                             <h3>0/month</h3>
-                            <ul>
+                            <ul class="plan__features">
                                 <li>Hd available</li>
                                 <li>Unlimited Movies and TV shows</li>
                                 <li>Watch on your phone</li>
@@ -310,10 +330,11 @@
                     </div>
 
                     <div class="plan">
-                        <div class="inner_plan">
+                        <div class="inner_plan recommended_plan">
+                            <h2 class="plan__badge">Recommended</h2>
                             <h2>Basic</h2>
                             <h4>$9.99/month</h4>
-                            <ul>
+                            <ul class="plan__features">
                                 <li>Hd available</li>
                                 <li>Unlimited Movies and TV shows</li>
                                 <li>Watch on your phone</li>
@@ -331,7 +352,7 @@
                         <div class="inner_plan">
                             <h2>Premium</h2>
                             <h3>$19.99/month</h3>
-                            <ul>
+                            <ul class="plan__features">
                                 <li>Hd available</li>
                                 <li>Unlimited Movies and TV shows</li>
                                 <li>Watch on your phone</li>
