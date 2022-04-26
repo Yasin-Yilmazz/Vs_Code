@@ -64,7 +64,6 @@
             width: calc(100% - 10px);
             /*Bu şekilde yaparak soldaki elemanı sağdan çıkardık ve otomatik hesaplattık*/
             text-align: right;
-
         }
 
         #movieapp {
@@ -87,7 +86,7 @@
             list-style: none;
         }
 
-        li {
+        header li {
             display: inline-block;
         }
 
@@ -108,11 +107,6 @@
             text-align: center;
         }
 
-        h2 {
-            text-align: center;
-            margin: 10px;
-        }
-
         .parts {
             padding: 10px;
             display: inline-block;
@@ -121,7 +115,7 @@
 
         }
 
-        h3 {
+        #how-it-works h3 {
             display: inline-block;
             padding: 30px;
             font-size: 24px;
@@ -154,6 +148,9 @@
 
         .right h3 {
             font-size: 30px;
+            display: inline-block;
+            padding: 30px;
+            font-size: 24px;
         }
 
         #features a {
@@ -179,6 +176,43 @@
         #features p {
             margin: 20px 0px;
         }
+
+        .plans {
+            text-align: center;
+            
+        }
+
+        .plan {
+            background-color: #dadbd5;
+            margin: 10px;
+            text-align: center;
+            float: left;
+            width: 31%;
+            vertical-align: middle;
+            padding: 25px;
+            
+        }
+
+        .plan h2 {
+            padding-bottom: 20px;
+        }
+
+        .plan ul {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        #plans_title {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .clearfix {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
     </style>
 
 </head>
@@ -238,6 +272,59 @@
                 </div>
 
             </div>
+        </section>
+
+        <section id="plans">
+            <h2 id="plans_title">Become a Premium Member</h2>
+
+            <div class="clearfix">
+                <div class="plan">
+                    <h2>Free</h2>
+                    <h3>0/month</h3>
+                    <ul>
+                        <li>Hd available</li>
+                        <li>Unlimited Movies and TV shows</li>
+                        <li>Watch on your phone</li>
+                        <li>Download and watch offline</li>
+                        <li>Screens you can watch</li>
+                        <li>Frist Month Free</li>
+                    </ul>
+                    <div>
+                        <button>Choose Plan</button>
+                    </div>
+                </div>
+                <div class="plan">
+                    <h2>Basic</h2>
+                    <h4>$9.99/month</h4>
+                    <ul>
+                        <li>Hd available</li>
+                        <li>Unlimited Movies and TV shows</li>
+                        <li>Watch on your phone</li>
+                        <li>Download and watch offline</li>
+                        <li>Screens you can watch</li>
+                        <li>Frist Month Free</li>
+                    </ul>
+                    <div>
+                        <button>Choose Plan</button>
+                    </div>
+                </div>                <div class="plan">
+                    <h2>Premium</h2>
+                    <h3>$19.99/month</h3>
+                    <ul>
+                        <li>Hd available</li>
+                        <li>Unlimited Movies and TV shows</li>
+                        <li>Watch on your phone</li>
+                        <li>Download and watch offline</li>
+                        <li>Screens you can watch</li>
+                        <li>Frist Month Free</li>
+                    </ul>
+                    <div>
+                        <button>Choose Plan</button>
+                    </div>
+                </div>
+            </div>
+
+
         </section>
     </main>
 <br><br><br><br><br><br><br><br><br><br>
