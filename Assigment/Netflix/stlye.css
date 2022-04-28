@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/background_image.jpg);
+}
+
+#container {
+    margin: 20px;
+    padding: auto;
+    border: 1px solid white;
+    height: 90%;background-color: rgba(0, 0, 0, 0.288);
+}
+
+#title {
+    color: #ffffff;
+    text-align: center;
+    vertical-align: top;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#title h1::after {
+    bottom: 2;
+    color: red;
+    content: "FLIX";
+    position: absolute;
+    transform: translate(-100%, 0);
+  }
+
+#description {
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+#survey-form {
+    color: #fff;
+    /* text-align: center; */
+    /* border: 1px solid #fff; */
+    margin: 10px 30%; 
+    background-color: rgba(0, 0, 0, 0.747);
+}
+
+#survey-form input{
+    padding: 10px;
+    margin: 0 10px 5px 20px ;
+    /* display: block; */
+    width: 80%;
+    height: 20px;
+}
+
+#survey-form label {
+    padding: 10px;
+    margin: 0 10px 5px 20px ;
+    display: block;
+}
+select {
+    width: 80%;
+    margin-left: 20px;
+    padding: 7px;
+}
+
+#type {
+    width: !important;
+}
+

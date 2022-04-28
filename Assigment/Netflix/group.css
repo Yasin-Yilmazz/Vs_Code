@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Shizuru&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(/background_image.jpg);
+}
+.head-class {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+.head-class p {
+  font-weight: bolder;
+  font-size: 20px;
+}
+h1 {
+  font-family: "Lobster", cursive;
+  color: white;
+  font-size: 40px;
+}
+span {
+  color: red;
+}
+.container {
+  background-color: rgba(0, 0, 0, 0.375);
+  width: 95%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.survey-form {
+  width: 34rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+label {
+  color: white;
+  display: block;
+}
+p {
+  color: #F3F3F3;
+}
+.bir {
+  display: inline-block;
+}
+.info {
+  padding: 10px;
+}
+textarea {
+  padding: 10px;
+}
+.input {
+  margin-top: 7px;
+  width: 400px;
+  height: 40px;
+}
+#content-box select {
+  width: 380px;
+  height: 30px;
+}
+input {
+  padding-left: 10px;
+}
+.btn {
+  background-color: red;
+  color: #F3F3F3;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.button {
+  text-align: center;
+}
