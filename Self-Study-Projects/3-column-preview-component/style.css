@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+html {
+    font-size: 62.5%;
+  }
+
+#conteiner {
+    min-height: 90vh;
+    place-content: center;
+    justify-content: center;
+    background-color: hsl(0deg, 0%, 95%);
+    margin: 5rem 3rem;
+    display: grid;
+}
+
+.types {
+    display: flex;
+    margin: auto;
+    max-width: 100rem;
+    border-radius: 10px;
+    /* border: 1px solid red; */
+
+}
+
+.cars {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 33.33rem;
+}
+
+#sedans {
+    background-color: hsl(31deg, 77%, 52%);
+
+}
+
+#suvs {
+    background-color: hsl(184deg, 100%, 22%);
+
+}
+
+#luxury {
+    background-color: hsl(179deg, 100%, 13%);
+}
+
+img {
+    padding-bottom: 20px ;
+    width: 80px;
+}
+
+h2 {
+    color: hsla(0deg, 0%, 100%, 0.75);
+    font-size: 4rem;
+    margin: 3rem 0;
+    letter-spacing: 0.1rem;
+    font-family: "Big Shoulders Display", cursive;
+}
+
+p {
+    font-size: 1.5rem;
+    color: hsla(0deg, 0%, 100%, 0.75);
+    line-height: 1.6;
+    word-spacing: 0.2rem;
+    margin-bottom: 8rem;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    display: inline-block;
+    border-radius: 10rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    background-color: hsl(0deg, 0%, 95%);
+    border: 2px solid transparent;
+    transition: border 0.2s, color 0.2s, background-color 0.2s;
+    cursor: pointer;
+}
+#sedan-button {
+    color: hsl(31deg, 77%, 52%);
+}
+
+#sedan-button:hover {
+    background-color: hsl(31deg, 77%, 52%);
+    border-color: #fff;
+    color: #fff;
+}
+
+#suv-button {
+    color: hsl(184deg, 100%, 22%);
+}
+
+#suv-button:hover {
+    background-color: hsl(184deg, 100%, 22%);
+    border-color: #fff;
+    color: #fff;
+}
+
+#luxury-button {
+    color: hsl(179deg, 100%, 13%);
+}
+
+#luxury-button:hover {
+    background-color: hsl(179deg, 100%, 13%);
+    border-color: #fff;
+    color: #fff;
+}
