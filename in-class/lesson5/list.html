@@ -5,8 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    .item {
+        list-style-type: none;
+        /* list-style-position: inside; */
+        /* list-style-image: url(images/locaiton.png); */
+        list-style-type: "❤";
+        /* list-style: square inside url(images/rocket.png); */
+    }
+    
+    li::before {
+        content: "\263B";
+        color: crimson;
+        padding: 5px;
+        font-size: 2em;
+    }
+
+    
+
+
+    </style>
 </head>
 <body>
-    
+    <ul>
+        <li class="item items1">list1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, ut quam. Vel sed quae et rem harum laudantium architecto sapiente consequuntur magnam modi ducimus eius provident, necessitatibus ipsam fugiat neque.</li>
+        <li class="item items2">list2</li>
+        <li class="item items3">list3</li>
+        <li class="item items4">list4</li>
+    </ul>
 </body>
 </html>
