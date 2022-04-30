@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .box1 {
+            background-color: brown;
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+        }
+
+        /* relative olunca kendi olduğu çizgi hizasında kalıyor diğer etikeleri hiçbir şekilde etkilemiyor */
+
+        .box2 {
+            background-color: darkcyan;
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            /* margin: 20px 0; */
+            position: relative;
+            top: 2rem;
+            left: 5rem;
+        }
+
+        
+        /* absolute olunca nerde olursa olsun sayfanın sol üst kısmından başlayıp verdiğin değere göre pozisyon alıyor  */
+
+        .box3 {
+            background-color: chocolate;
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            position: absolute;
+            top: 20px;
+            left: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+</body>
+</html>
