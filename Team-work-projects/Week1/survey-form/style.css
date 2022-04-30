@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: url(images/clarusway-logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.conteiner {
+    margin: 0 auto;
+    padding:20px;
+}
+
+.contents {
+    background-color: rgba(19, 84, 114, 0.267);
+    max-width: 600px;
+    margin:0 auto;
+    padding: 20px 40px;
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: rgba(236, 177, 12, 0.979);
+}
+
+p {
+    font-size: 1rem;
+}
+
+.input-box {
+    font-size: 20px;
+}

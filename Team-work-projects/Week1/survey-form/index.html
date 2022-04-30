@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="contents">
+            <header>
+                <h1>Clarusway Survey Form</h1>
+                <p>Thank you for taking the time to help us improve the platform</p>
+            </header>
+            <div class="survey-form">
+                <div class="form-box">
+                    <form action="">
+                        <div id="name-box" class="input-box">
+                            <label for="name">Name</label><br>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div id="surname-box" class="input-box">
+                            <label for="surname">Surname</label><br>
+                            <input type="text" name="surname" id="surname">
+                        </div>
+                        <div id="email-box" class="input-box">
+                            <label for="email">Email</label><br>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div id="role" class="input-box">
+                            <p>Which option best describe your current role ?</p>
+                            <select name="role" id="role-dropdown">
+                                <option value="Select">Select an option</option>
+                                <option value="Student">Student</option>
+                                <option value="Instructure">Instructure</option>
+                                <option value="Full-time">Full time developer</option>
+                                <option value="Freelance">Freelance developer</option>
+                            </select>
+                        </div>
+                        <div id="recommend" class="select-box">
+                            <input type="radio" name="recommend" id="first-select" value="yes">
+                            <label for="yes">Definitely, Yes</label><br>
+                            <input type="radio" name="recommend" id="second-select" value="maybe">
+                            <label for="maybe">Maybe</label><br>
+                            <input type="radio" name="recommend" id="third-select" value="not-sure">
+                            <label for="not-sure">Not sure</label><br>
+                            <input type="radio" name="recommend" id="forth-select" value="no">
+                            <label for="no">Definitely, No</label>
+                        </div>
+                        <div id="features" class="input-box">
+                            <select name="features" id="features-dropdown">
+                                <option value="select">Select an option</option>
+                                <option value="courses">Courses</option>
+                                <option value="project">Project</option>
+                                <option value="community">Community</option>
+                                <option value="mentor">Mentor</option>
+                            </select>
+                        </div>
+                        <div id="improve" class="select-box">
+                            <input type="checkbox" name="improved-part" id="front-end">
+                            <label for="front-end">Front-end Project</label><br>
+                            <input type="checkbox" name="improved-part" id="back-end">
+                            <label for="back-end">Back-end Project</label><br>
+                            <input type="checkbox" name="improved-part" id="data-science">
+                            <label for="data-science">Data Science</label><br>
+                            <input type="checkbox" name="improved-part" id="add-courses">
+                            <label for="add-courses">Additional Courses</label><br>
+                        </div>
+                        <div id="comments" class="input-box">
+                            <p>Any comments or suggestions?</p>
+                            <textarea name="comment" id="comment" cols="30" rows="10"
+                                placeholder="Enter your comment here... Thanks for your interest..."></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
