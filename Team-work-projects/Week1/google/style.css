@@ -1,8 +1,14 @@
 *{
     margin: 0;
     padding: 0;
+    overflow: hidden;
     box-sizing: border-box;
 }
+
+#container {
+    height: 950px;
+}
+
 .mic{
     width: 15px;
 }
@@ -22,7 +28,7 @@ nav ul li a:visited{
     margin:0 5px;
 }
 header{
-    margin: 5px 0;
+    /* margin: 5px 0; */
 }
 nav button{
     background-color: rgb(77, 77, 216);
@@ -73,4 +79,9 @@ section{
 }
 button,a{
     cursor: pointer;
+}
+
+.dark {
+    background-color: black;
+    color: white;
 }
