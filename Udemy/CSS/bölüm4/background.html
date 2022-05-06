@@ -15,11 +15,14 @@
 
         }
         .header {
-            background-color: red;
-            height: 80vh;
-            background-image: url("https://picsum.photos/id/645/600/400");
+            /* background-image: linear-gradient(to right,#00cc66,#3399ff); */
+            background-image: url("https://picsum.photos/id/545/1000/1000");
             /* width: 80vw; görünüz alanın %80 inin alıyor*/
+            height: 50vh;
             position: relative;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         .header h1 {
@@ -28,10 +31,18 @@
             left: 50%;
             transform: translate(-50%,-50%);
             font-size: 4rem;
-            color: red;
+            color: lime;
         }
 
-
+        .cover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #00ff99;
+            opacity: 0.2;
+        }
 
 
 
@@ -41,6 +52,7 @@
 <body>
     <div class="header">
         <h1>Background Text</h1>
+        <!-- <div class="cover"></div> -->
     </div>
 
 
