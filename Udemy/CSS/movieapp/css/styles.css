@@ -118,19 +118,27 @@ main {
     margin-bottom: 40px;
 }
 
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col-4 {
+    float: left;
+    width: 25%;
+}
+
 .col-3 {
-    display: inline-block;
-    width: 30%;
-    padding: 16px;
-    margin: 8px;
+    float: left;
+    width: 33.3%;
 }
 
 .col-2 {
-    display: inline-block;
-    width: calc(50% - 2px);
-    height: 350px;
-    background-color: brown;
+    float: left;
+    width: 50%;
 }
+
 
 .icon-box h3 {
     color: #3e4555;
@@ -155,6 +163,12 @@ main {
     vertical-align: top;
 }
 
+.features__left ,
+.features__right {
+    height: 350px;
+}
+
+
 .features__right h3 {
     font-size: 30px;
 }
@@ -169,8 +183,6 @@ main {
 .plan {           
     text-align: center;
     padding: 5px;
-    width: 33.3%;
-    float: left;
 }
 
 .plan__badge {
@@ -230,11 +242,28 @@ main {
 }
 
 #backtotop i {
-    color: #FC997C;
+    color: #2E4C6D;
     font-size: 45px;
     transition: color .6s;
 }
 
 #backtotop i:hover {
-    color:#fb6537;
+    color:#2E4C6D;
+}
+
+.counter {
+    background: linear-gradient(to bottom, #fc997c 0%, #fc8b69 100%);
+    text-align: center;
+    padding: 50px;
+}
+
+.counter__item {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.counter h4 {
+    margin: 0;
+    color: #fff;
 }
