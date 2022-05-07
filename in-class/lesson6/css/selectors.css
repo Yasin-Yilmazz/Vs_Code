@@ -1,24 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 nav.menu {
-    width: 150px;
-    background-color: rgba(123, 123, 123, .3);
-    font-family: 'Roboto', sans-serif;
+  width: 150px;
+  background-color: rgba(123, 123, 123, 0.3);
+  font-family: "Roboto", sans-serif;
 }
 
 nav.menu .list {
-    list-style-type: "🐵";
-    list-style-position: inside;
-    padding: 0;
+  list-style-type: "🐵";
+  list-style-position: inside;
+  padding: 0;
 }
 
 nav.menu .list li {
-    padding: 10px 5px;
+  padding: 10px 5px;
 }
 
-nav.menu .list li a{
-    text-decoration: none;
-    color: #73afeb;
+nav.menu .list li a {
+  text-decoration: none;
+  color: #73afeb;
 }
 
 /* nav.menu .list .aktif {
@@ -26,21 +26,35 @@ nav.menu .list li a{
 } */
 
 nav.menu .list li:first-child {
-    background-color: #423515;
+  background-color: #423515;
 }
 
-nav.menu ul li:hover a{
-    color: yellow;
+nav.menu ul li:hover a {
+  color: yellow;
 }
 
 nav.menu ul li:hover {
-    background-color: rgb(92, 21, 21);
+  background-color: rgb(92, 21, 21);
 }
 
 nav.menu .list li:last-child::after {
-    content: "💖";
+  content: "💖";
 }
 
 nav.menu .list li:first-child::before {
-    content: "❗";
+  content: "❗";
+}
+
+.menu > li {
+  color: aqua;
+}
+
+/* kutu clasının içindeki bütün p leri */
+.kutu p {
+  color: rgb(8, 90, 22);
+}
+
+/* parent ı kutu olan tüm p leri seçer */
+.kutu > p {
+  color: rgb(90, 90, 207);
 }
