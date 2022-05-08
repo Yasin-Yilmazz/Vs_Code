@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+th {
+  padding: 10px;
+}
+
+.basketbox {
+  position: absolute;
+}
+
+.product_code {
+  text-align: left;
+  padding-right: 20px;
+}
+
+.product_name {
+  padding-right: 80px;
+  text-align: left;
+}
+
+.unit_price {
+  text-align: right;
+}
+
+.total_price {
+  text-align: right;
+}
+
+.symbols {
+  padding-right: 25px;
+  font-size: 1.3rem;
+  text-indent: 10px;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(211, 211, 240);
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(231, 236, 240);
+}
+
+tr:first-child,
+tr:last-child {
+  background-color: rgb(68, 64, 64);
+  color: #fff;
+}
+
+.buttons {
+  float: right;
+  margin-right: -3px;
+}
+
+.basket_button {
+  width: 11rem;
+  height: 2.5rem;
+  margin: 5px;
+  background-color: rgb(241, 169, 181);
+  color: white;
+  border: none;
+  font-size: 1rem;
+}
+
+.shopping::before {
+  content: "\f07a";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 1000;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.payment::before {
+  content: "\f09d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 1200;
+  color: black;
+  font-size: 1.2rem;
+}
