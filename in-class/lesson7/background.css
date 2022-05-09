@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/Screenshot_3.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+
+h1,
+p {
+  color: #fff;
+  padding-top: 2em;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+button {
+  padding: 0.4rem 5rem;
+  border-radius: 1rem;
+  /* position: fixed; */
+}
