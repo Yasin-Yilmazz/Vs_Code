@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Inconsolata&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inconsolata", monospace;
+  background-color: #f3f3f3;
+}
+h1 {
+  text-align: center;
+  /* background-color: red; */
+  margin: 30px;
+}
+.faq-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.faq-item {
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: 15px;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.title {
+  font-size: 1.2rem;
+  color: grey;
+}
+.description {
+  font-size: 1.4rem;
+}
+.btn-faq {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  /* display: flex;
+  justify-content: ; */
+  font-size: 1rem;
+  padding: 0;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+}
