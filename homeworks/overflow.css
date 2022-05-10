@@ -5,7 +5,7 @@
 }
 
 .container {
-  width: 20vw;
+  width: auto;
   height: 20vh;
   margin: 50px;
 }
@@ -17,6 +17,7 @@
   color: #fff;
   border: none;
   cursor: pointer;
+  display: block;
 }
 
 .items {
@@ -26,6 +27,6 @@
   display: none;
 }
 
-.products:hover ~ .items {
+button:hover + .items {
   display: inline-block;
 }
