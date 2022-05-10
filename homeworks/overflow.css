@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  /* padding: 0; */
+}
+
+.container {
+  width: 20vw;
+  height: 20vh;
+  margin: 50px;
+}
+
+.products {
+  width: 120px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.61);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.items {
+  border: 1px solid black;
+  font-size: 1.3rem;
+  padding: 5px 25px;
+  display: none;
+}
+
+.products:hover ~ .items {
+  display: inline-block;
+}
