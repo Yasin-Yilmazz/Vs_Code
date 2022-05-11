@@ -28,24 +28,44 @@ console.log("Program bitti");
 
 // Örnek: Dışarıdan girilen sayının Asal olup olmadığını tespit ederek sonucu yazdıran programı yazınız.
 
+// let input = prompt("Asal olup olmadığını kontrol etmek için sayı giriniz");
+
+// for (let i = 2; i < input; i++) {
+//   if (input % i == 0) {
+//     console.log(`${input} sayısı asal değildir.`);
+//     break;
+//   } else {
+//     console.log(`${input} sayısı asal sayıdır.`);
+//     break;
+//   }
+// }
+
 //************************* WHILE ********************************* */
 
-let i = 1;
-while (i <= 5) {
-  console.log("Merhaba");
-  break;
-}
+// let i = 1;
+// while (i <= 5) {
+//   console.log("Merhaba");
+//   break;
+// }
 
-console.log("bitti");
+// console.log("bitti");
 
-//************************************************************* */
+// //************************************************************* */
 
-let not;
-do {
-  // not = prompt("0-100 arası bir not giriniz");
-} while (not < 0 || not > 100);
-{
-  console.log("girdiğiniz not 0-100 arasındadır");
-}
+// let not;
+// do {
+//   // not = prompt("0-100 arası bir not giriniz");
+// } while (not < 0 || not > 100);
+// {
+//   console.log("girdiğiniz not 0-100 arasındadır");
+// }
 
 //? ÖDEV: Klavyeden Q karakteri girilene kadar not girişi yapan bir programı döngü kullanarak yazınız.
+
+let inp1;
+do {
+  inp1 = prompt("Enter any letter: ");
+  if (inp1 == "q" || inp1 == "Q") {
+    break;
+  }
+} while (inp1 !== "q" || inp1 !== "Q");
