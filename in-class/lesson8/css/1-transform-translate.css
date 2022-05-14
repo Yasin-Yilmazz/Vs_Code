@@ -1,0 +1,95 @@
+.yazi {
+  text-align: center;
+  font-size: 2rem;
+  width: 50%;
+  margin: 2rem auto;
+}
+
+/******** ROTATE *********/
+
+.yazi1 {
+  background-color: aqua;
+  transform: rotateX(180deg);
+  /*! 90 ve 270 derecelerde yazılar tam dik olduklarından ve 3 boyutlu olarak bakamadığmız için gözükmezler */
+}
+
+.yazi2 {
+  background-color: hotpink;
+  transform: rotateY(45deg);
+}
+
+.yazi3 {
+  background-color: tomato;
+  transform: rotate(-45deg);
+}
+
+/******* SCALE *******/
+
+.yazi4 {
+  background-color: violet;
+}
+
+.yazi4:hover {
+  transform: scaleX(2) scaleY(3);
+}
+
+.yazi5 {
+  background-color: yellowgreen;
+}
+
+.yazi5:hover {
+  transform: scale(2, 3);
+  transition: 1s;
+}
+
+/******** TRANSLATE *********/
+
+.translate {
+  background-color: lightcoral;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  color: #fff;
+  transition: transform 1s;
+}
+
+.x {
+}
+
+.x:hover {
+  transform: translateX(50px);
+}
+
+.y {
+}
+
+.y:hover {
+  transform: translateY(-50px);
+}
+
+.xy {
+}
+
+.xy:hover {
+  transform: TRANSLATE(50px, 50px);
+}
+
+.transition-div {
+  text-align: center;
+}
+
+.transition-btn {
+  width: 5rem;
+  padding: 1rem;
+  background-color: lightgreen;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 1s ease 0.2s;
+}
+
+.transition-btn:hover {
+  background-color: darkgreen;
+  color: #fff;
+}
