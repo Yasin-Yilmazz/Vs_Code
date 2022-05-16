@@ -1,4 +1,4 @@
-//? Create a function named divisors/Divisors that takes an integer n > 1 and returns an array with all of the integer's divisors(except for 1 and the number itself), from smallest to largest. If the number is prime return the string '(integer) is prime'
+//! Create a function named divisors/Divisors that takes an integer n > 1 and returns an array with all of the integer's divisors(except for 1 and the number itself), from smallest to largest. If the number is prime return the string '(integer) is prime'
 
 const isPrime = function (x) {
   for (let i = 2; i < x; i++) if (x % i === 0) return `${x} is not prime`;
