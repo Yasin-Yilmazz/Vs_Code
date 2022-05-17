@@ -1,0 +1,11 @@
+/* initial style */
+p {
+  color: red;
+}
+
+/* media query */
+@media only screen and (min-width: 1024px) {
+  p {
+    color: green;
+  }
+}
