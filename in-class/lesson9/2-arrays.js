@@ -27,10 +27,9 @@ console.log(java);
 isimler[2] = "Canan";
 console.log(isimler);
 
-//! Hata, const keyword'u ile tanımlanmış bir diziye tamamıyla bir atama yapılmaz
-
-// isimler = ["Can", "Cana", "Cavidan"];
+// isimler = ["Can", "Cana", "Cavidan"]; //! Hata, const keyword'u ile tanımlanmış bir diziye tamamıyla bir atama yapılmaz
 // console.log(isimler);
+
 //! Uncaught TypeError: Assignment to constant variable.
 const yaslar = [22, 18, 15];
 const kisiler = ["Ahmet", "Yilmaz", 2022, 2022 - 1970, true, 5.6, yaslar];
@@ -59,7 +58,7 @@ console.log(boyut, cars);
 
 //* dizinin 0. indeks elemanını siler ve silinen elemanı dondurur
 const silinen = cars.shift();
-console.log(silinen, cars);
+console.log("silinen:" + silinen, cars);
 
 //* dizinin tamamnını ters sıraya cevirdi
 console.log(cars.reverse());

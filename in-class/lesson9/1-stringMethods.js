@@ -119,6 +119,15 @@ console.log(copyTarkan); // Stringi array haline getirdi
 // https://www.youtube.com/watch?v=b7vfp5G4brE
 // https://youtu.be/b7vfp5G4brE
 
+let youtube = "https://www.youtube.com/watch?v=b7vfp5G4brE";
+let shortYoutube = youtube.replace("www.youtube.com/watch?v=", "youtu.be/");
+console.log(shortYoutube);
+shortYoutube =
+  youtube.slice(0, youtube.indexOf("www")) +
+  "youtu.be/" +
+  youtube.slice(youtube.indexOf("=") + 1);
+console.log(shortYoutube);
+
 //* ----------------------------------------------------------
 //* trim();
 //* ----------------------------------------------------------
