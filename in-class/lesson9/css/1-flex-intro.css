@@ -1,0 +1,119 @@
+/* https://github.com/clarusway/clarusway-full-stack-11-22/tree/main/html-css/assigments/hc04-ass4/assigment */
+* {
+  font-size: 1.5rem;
+}
+.container {
+  background-color: yellowgreen;
+  display: flex;
+  /*! Elemanların diziliş yönü : column, row, row-reverse, column-reverse*/
+  flex-direction: row; /* default değer row */
+
+  /*? sıkıştırma veya alt satıra geçebilme:flex-wrap: wrap, nowrap, wrap-reverse*/
+  flex-wrap: wrap;
+
+  /*! Yatay Hizalama: Justify-center
+  /** flex-start, flex-end,center, space-around,space-evenly, space-between*/
+  justify-content: space-evenly; /*hepsiyle aynı mesafe*/
+  align-items: center;
+  gap: 10px 40px;
+}
+
+.container div {
+  width: 5rem;
+  height: 5rem;
+  background-color: violet;
+  /* margin: 1rem; */
+}
+
+.container1 {
+  background-color: lightcoral;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: stretch;
+  height: 20rem;
+  gap: 10px 20px;
+}
+/** bir child element stretch ile container'ın sınırlarına dayandığında child'in içerisindeki içeriği (Örn yazı) yine dikey olarak ortaya hizalamak için nested flex yapısı kullanılabilir*/
+
+.container1 div {
+  /* height: 5rem; */
+  margin: 1rem 0;
+  width: 5rem;
+  background-color: lightskyblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  height: 20rem;
+  background-color: rgb(255, 255, 0);
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 50px;
+  /*!Çok satırlı verilerin dikeyde hizalama için kullanılır.*/
+  align-items: flex-start;
+  /* align-content: flex-start; */
+}
+
+ul li {
+  background-color: mediumorchid;
+  width: 4rem;
+  height: 4rem;
+}
+
+.container3 {
+  background-color: mediumspringgreen;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container3 div {
+  background-color: mediumvioletred;
+  width: 5rem;
+  margin: 1rem;
+  flex-grow: 1;
+  text-align: center;
+}
+
+div.grow2 {
+  flex-grow: 2;
+}
+
+div.grow3 {
+  flex-grow: 3;
+}
+
+div.nogrow {
+  flex-grow: 0;
+}
+
+.container4 {
+  background-color: indianred;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: nowrap;
+}
+
+.container4 div {
+  background-color: yellowgreen;
+  margin: 1rem;
+}
+
+.div1 {
+  width: 10%;
+}
+.div2 {
+  width: 20%;
+}
+.div3 {
+  width: 30%;
+}
+.div4 {
+  width: 40%;
+}
