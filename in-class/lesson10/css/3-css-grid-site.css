@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 200px 10vh calc(100vh - (200px + 20vh)) 10vh;
+}
+
+.content {
+}
+
+header {
+  grid-column: span 12;
+  background-image: url("https://picsum.photos/id/484/600/400");
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  background-color: lightskyblue;
+  grid-column: span 12;
+}
+
+aside {
+  background-color: lightyellow;
+  grid-column: span 3;
+}
+
+main {
+  background-color: tomato;
+  grid-column: span 9;
+}
+
+footer {
+  background-color: turquoise;
+  grid-column: span 12;
+}
