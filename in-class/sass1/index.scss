@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+}
+
+//****************************************
+//! Variable Declaration
+//****************************************
+
+$bgColor: pink;
+$fontColor: white;
+$fontSize: 1.2rem;
+$fontFamily: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+$navBgColor: #30a7c3;
+$myBorder: 2px solid rgb(175, 29, 29);
+$myLinkSize: 19px;
+$bannerBgColor: #cc6699;
+
+//****************************************
+//! Variable Usage
+//****************************************
+
+body {
+  font-family: $fontFamily;
+  background-color: $bgColor;
+  color: $fontColor;
+  font-size: $fontSize;
+}
+
+//********** HEADER *********************//
+
+header {
+  background-color: $navBgColor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+
+  img {
+    width: 80px;
+    border: $myBorder;
+    border-radius: 0.8rem;
+    padding: 0.4rem;
+  }
+  nav {
+    ul {
+      list-style: none;
+    }
+    li {
+      //! içinde bulunduğumuzu elementi refere etmek için & kullanılır
+      display: inline-block;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    a {
+      color: $fontColor;
+      text-decoration: none;
+      padding: 0.5rem;
+    }
+  }
+}
