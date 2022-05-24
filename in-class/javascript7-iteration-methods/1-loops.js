@@ -59,5 +59,26 @@ const ogrenciBul = (isim) => {
   }
 };
 
-let ogrIsim = prompt("Ogrenci adını giriniz: ");
-console.log(ogrenciBul(ogrIsim));
+// let ogrIsim = prompt("Ogrenci adını giriniz: ");
+// console.log(ogrenciBul(ogrIsim));
+
+//* ======================================================
+//*                   FOR-OF LOOP
+//* ======================================================
+
+//* for of dongusu, for in dongusunun bir cok veri yapisini
+//* kapsayacak sekilde guncellenmis halidir. Bu dongude dizi
+//* icersindeki veriye erisirken indisleme kullanmaya gerek yoktur.
+
+const ogrenciBulForof = (isim) => {
+  let sayac = 0;
+
+  for (let ogrenci of ogrenciler) {
+    ogrenci === isim ? sayac++ : null; //!Ternary
+    //   gorenci === isim && sayac++;  //! Short-circuit yöntemi && => koşul doğru ise ifadeyi çalıştırır
+  }
+  return !sayac ? `${isim} bulunamadı` : `${isim}, ${sayac} adet bulundu.`; //! sayac 0 ise ? sonrayı değilse : sonrayı döndür
+};
+
+let name = prompt("öğrenci adı giriniz: ").toLowerCase();
+console.log(ogrenciBulForof(name));
