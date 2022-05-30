@@ -2,7 +2,7 @@
 //*                        EVENTS
 //* ======================================================
 
-console.log('****** EVENTS *******');
+console.log("****** EVENTS *******");
 
 //* EXAMPLE-1 (Mouse Over, Mouse Out )
 //* -------------------------------------------------------
@@ -13,27 +13,27 @@ console.log('****** EVENTS *******');
 //   document.getElementById('header').style.color = 'red';
 // };
 
-const header = document.getElementById('header');
+const header = document.getElementById("header");
 
 header.onmouseover = function () {
-  header.style.color = 'red';
+  header.style.color = "red";
 };
 
 header.onmouseout = function () {
-  header.style.color = 'black';
+  header.style.color = "black";
 };
 
 //? METHOD-4 (ONLY JAVASCRIPT - addEventListener())
 //?-------------------------------------------------------
-const myImg = document.querySelector('img');
+const myImg = document.querySelector("img");
 
-// myImg.addEventListener('mouseover', () => {
-//   myImg.style.transform = 'translateY(5px)';
-// });
+myImg.addEventListener("mouseover", () => {
+  myImg.style.transform = "translateY(15px)";
+});
 
-// myImg.addEventListener('mouseout', () => {
-//   myImg.style.transform = 'translateY(-5px)';
-// });
+myImg.addEventListener("mouseout", () => {
+  myImg.style.transform = "translateY(-5px)";
+});
 
 // myImg.addEventListener('mouseover', () => {
 //   myImg.style.transform = 'scale(1.2, 1.4)';
@@ -47,11 +47,11 @@ const myImg = document.querySelector('img');
 //* EXAMPLE-2 (Button onclick)
 //* -------------------------------------------------
 
-const button = document.querySelector('#btn');
+const button = document.querySelector("#btn");
 
-button.addEventListener('click', function (event) {
+button.addEventListener("click", function (event) {
   console.log(event.target);
-  document.querySelector('body').style.backgroundImage =
-    'linear-gradient(to right,purple, yellow)';
-  button.textContent = 'Search';
+  document.querySelector("body").style.backgroundImage =
+    "linear-gradient(to right,purple, yellow)";
+  button.textContent = "Search";
 });
