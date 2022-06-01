@@ -71,9 +71,50 @@ section#instructors .card:hover {
 /*! ------------------- 4- STUDENTS SECTION ------------------------ */
 
 /*! ------------------- 5- COURSES SECTION ------------------------ */
+section#courses .nav-link {
+  color: #fff;
+}
 
+section#courses .nav-link.active {
+  background-color: var(--red);
+}
 /*! ------------------- 6- CONTACT SECTION ------------------------ */
+
+section#contact i {
+  color: var(--red);
+  font-size: 1.8rem;
+}
 
 /** ------------------- UP-BUTTON --------------------- */
 
+.up-btn {
+  position: fixed;
+  background-color: var(--red);
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  bottom: 1rem;
+  right: 1rem;
+  text-align: center;
+  padding-top: 0.6rem;
+  font-size: 1.2rem;
+}
+
+.up-btn:hover {
+  color: black;
+  transition: all 2s;
+}
+
 /*! -------------------- 7- FOOTER ------------------------ */
+
+footer i {
+  font-size: 2rem;
+  color: white;
+  margin-right: 1rem;
+  transition: color 1s;
+}
+
+footer i:hover {
+  color: var(--red);
+}
