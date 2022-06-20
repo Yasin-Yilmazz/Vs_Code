@@ -1,7 +1,3 @@
-//*=========================================================
-//*                     FLAG-APP
-//*=========================================================
-
 const fetchCountry = async (name) => {
   const url = `https://restcountries.com/v3.1/name/${name}`;
   try {
@@ -18,6 +14,27 @@ const fetchCountry = async (name) => {
   }
 };
 
+const getCountryNames = async () => {
+  try {
+    const res = await fetch("https://restcountries.com/v3.1/all");
+    const data = await res.json();
+    const names = data.map((country) => country.name.common);
+    names.sort();
+    names.forEach((country) => getSelect(country));
+  } catch (error) {
+    renderError(error);
+  }
+};
+getCountryNames();
+
+const getSelect = (country) => {
+  const createOption = document.createElement("option");
+  createOption.value = country;
+  createOption.textContent = country;
+  const select = document.querySelector("select");
+  select.append(createOption);
+};
+
 const renderError = (err) => {
   const countriesDiv = document.querySelector(".countries");
   countriesDiv.innerHTML = `
@@ -27,7 +44,6 @@ const renderError = (err) => {
 };
 
 const renderCountry = (country) => {
-  console.log(country);
   const countriesDiv = document.querySelector(".countries");
   const {
     capital,
@@ -37,34 +53,40 @@ const renderCountry = (country) => {
     languages,
     currencies,
   } = country;
-  //   const { name } = name.common;
-  //   console.log(capital[0], common, region, svg);
-  //   console.log(Object.values(languages));
-  //   console.log(Object.values(currencies[0].name))
-  //   console.log(Object.values(currencies[0].symbol))
-  countriesDiv.innerHTML += `
 
-    <div class="card shadow-lg" style="width: 18rem;">
-        <img src="${svg}" width = "50%" class="card-img-top" alt="...">
+  const language = renderLanguage(languages);
+  const currency = getCurrency(currencies);
+  const newCountry = document.createElement("div");
+  newCountry.classList.add("d-flex", "justify-content-center", "mt-4");
+  newCountry.innerHTML = `
+    <div class="card" style="width: 18rem">
+        <img src="${svg}" class="card-img-top" alt="${common} flag" />
         <div class="card-body">
-            <h5 class="card-title">${common}</h5>
-            <p class="card-text">${region}</p>
+          <h5 class="card-title">${common}</h5>
         </div>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item"><i class="fas fa-lg fa-landmark"></i> ${capital}</li>
-            <li class="list-group-item"><i class="fas fa-lg fa-comments"></i> ${Object.values(
-              languages
-            )}</li>
-            <li class="list-group-item"><i class="fas fa-lg fa-money-bill-wave"></i> ${
-              Object.values(currencies)[0].name
-            },${Object.values(currencies)[0].symbol}</li>
+        <li class="list-group-item"><i class="fa-solid fa-earth-europe"></i> ${region}</li>
+          <li class="list-group-item"><i class="fas fa-lg fa-landmark"></i> ${capital}</li>
+          <li class="list-group-item"><i class="fa-solid fa-language"></i> ${language}</li>
+          <li class="list-group-item"><i class="fa-solid fa-money-bill-wave"></i> ${currency}</li>
         </ul>
-        
-    </div>
+      </div>`;
 
-`;
+  document.querySelector(".cards").innerHTML = "";
+  document.querySelector(".cards").append(newCountry);
 };
 
-fetchCountry("turkey");
-fetchCountry("usa");
-fetchCountry("france");
+const renderLanguage = (languages) => {
+  return Object.values(languages).join(" ");
+};
+
+const getCurrency = (currencies) => {
+  return `${Object.entries(currencies)[0][1].symbol || ""} ${
+    Object.entries(currencies)[0][1].name
+  }`;
+};
+
+const dropdown = document.querySelector("select");
+dropdown.onchange = (e) => {
+  fetchCountry(dropdown.options[dropdown.selectedIndex].text);
+};
