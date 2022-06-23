@@ -1,23 +1,17 @@
 import Person from "./Person";
+import data from "./data";
 
 function App() {
+  // const { name, img, tel } = data;
   return (
     <>
-      <Person
-        name="Canan Bayram"
-        img="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947__480.jpg"
-        tel="5555 555555"
-      />
-      <Person
-        name="Can Bayram"
-        img="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445__340.jpg"
-        tel="5555 554444"
-      />
-      <Person
-        name="Ahmet Fevzi"
-        img="https://cdn.pixabay.com/photo/2015/01/27/09/58/man-613601__340.jpg"
-        tel="5555222222"
-      />
+      {/* {data.map((x) => (
+      <Person name={x.name} img={x.img} tel={x.tel}  />
+      ))} */}
+      {data.map((i) => {
+        const { name, img, tel } = i;
+        return <Person name={name} img={img} tel={tel} />;
+      })}
     </>
   );
 }
