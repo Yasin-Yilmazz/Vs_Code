@@ -48,14 +48,23 @@ const UseStateExample = () => {
     // setInfo(info.age + 1);
     setInfo({ ...info, age: info.age + 1 });
   };
-  console.log(info);
-  // const clear = () => {
-  //   setCount((count = 0));
-  // };
+
+  const decAge = () => {
+    setInfo({ ...info, age: info.age - 1 });
+  };
+
+  const doubleInc = () => {
+    setCount(count + 2);
+  };
+
   return (
     <div className="container text-center mt-4">
       <section>
         <h1 className="display-4 text-danger m-4">USESTATE COUNT:{count}</h1>
+
+        <button onClick={doubleInc} className="btn btn-secondary">
+          DOUBLE INC
+        </button>
         <button onClick={inc} className="btn btn-success">
           INC
         </button>
@@ -65,14 +74,20 @@ const UseStateExample = () => {
         <button onClick={dec} className="btn btn-warning">
           DEC
         </button>
+        <button onClick={() => setCount(count - 2)} className="btn btn-primary">
+          DOUBLE DEC
+        </button>
       </section>
-      <section>
-        <h1 className="display-4 text-danger m-4">USESTATE OBJECT:{count}</h1>
+
+      <section className="mt-5">
         <h2>{info.name}</h2>
         <h3>{info.email}</h3>
         <h3>{info.age}</h3>
         <button onClick={incAge} className="btn btn-info p-3 text-danger">
           Inc Age
+        </button>
+        <button onClick={decAge} className="btn btn-primary p-3 text-danger">
+          Dec Age
         </button>
       </section>
     </div>
