@@ -23,7 +23,7 @@ const Home = () => {
     getTutorials();
   }, []);
 
-  console.log(tutorials);
+  // console.log(tutorials);
 
   //! POST (Create)
   const addTutorial = async (tutorial) => {
@@ -51,7 +51,7 @@ const Home = () => {
       .filter((tutor) => tutor.id === id)
       .map(() => ({ title: title, description: desc }));
 
-    console.log(filtered);
+    // console.log(filtered);
     try {
       await axios.put(`${url}/${id}`, filtered[0]);
     } catch (error) {
