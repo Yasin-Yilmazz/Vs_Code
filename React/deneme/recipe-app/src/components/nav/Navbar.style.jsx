@@ -24,7 +24,7 @@ export const Menu = styled(Flex)`
   @media (max-width: ${({ theme }) => theme.screens.lg}) {
     flex-direction: column;
     width: 100%;
-    max-height: ${({ isOpen }) => (isOpen ? "400px" : "0")};
+    max-height: ${({ isHamburger }) => (isHamburger ? "400px" : "0")};
     overflow: hidden;
   }
 `;
@@ -39,6 +39,20 @@ export const MenuLink = styled(Link)`
   &:hover {
     color: ${({ theme }) => theme.colors.mainColor};
     font-weight: bold;
+  }
+`;
+
+export const ALink = styled.a`
+  color: #02475e;
+  text-decoration: none;
+`;
+
+export const Hamburger = styled.div`
+  display: none;
+  color: ${({ theme }) => theme.colors.mainColor};
+  cursor: pointer;
+  @media (max-width: ${({ theme }) => theme.screens.lg}) {
+    display: block;
   }
 `;
 
