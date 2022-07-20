@@ -1,38 +1,45 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../context/AuthContext";
+import { logOut } from "../firebase";
+
 const Navbar = () => {
   const navigate = useNavigate();
-  // const currentUser = { displayName: "yase" };
-  const currentUser = "";
+  const { currentUser } = useContext(AuthContext);
+  // const currentUser = { displayName: 'felix franko' };
+  // const currentUser = false;
   return (
     <div>
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid">
-          <Link to={"/"} className="navbar-brand text-white">
-            <h4>Movie Ocean</h4>
+          <Link to="/" className="navbar-brand text-white">
+            <h4>React Movie App</h4>
           </Link>
-          <div className="d-flex text-white align-items-center">
+          <div className="d-flex text-white align-items-center ">
             {currentUser ? (
               <>
                 <h5 className="mb-0 text-capitalize">
-                  Welcome {currentUser.displayName}{" "}
-                  <button className="btn ms-2 btn-outline-light">
-                    Log Out
-                  </button>
+                  {currentUser.displayName}
                 </h5>
+                <button
+                  className="ms-2 btn btn-outline-light"
+                  onClick={() => logOut()}
+                >
+                  Logout
+                </button>
               </>
             ) : (
               <>
                 <button
-                  className="btn ms-2 btn-outline-success"
-                  onClick={() => navigate("login")}
+                  className="ms-2 btn btn-outline-light"
+                  onClick={() => navigate("/login")}
                 >
-                  Log In
+                  Login
                 </button>
                 <button
-                  className="btn ms-2 btn-outline-danger"
-                  onClick={() => navigate("register")}
+                  className="ms-2 btn btn-outline-light"
+                  onClick={() => navigate("/register")}
                 >
                   Register
                 </button>
